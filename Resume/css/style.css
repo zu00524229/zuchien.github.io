@@ -18,9 +18,11 @@
 
     h2 {
         margin-bottom: 20px;
-        font-family: 'Press Start 2P', cursive;  /* 像素遊戲風格的字體 */
+        /* font-family: 'Press Start 2P', cursive;  像素遊戲風格的字體 */
+        font-family: 'VT323', sans-serif;
+
         font-weight: bold;  /* 加粗字體 */
-        font-size: 32px;  /* 調整字體大小以符合像素風格 */
+        font-size: 3em;  /* 調整字體大小以符合像素風格 */
         color: #f8c006;  /* 設定字體顏色 */
     }
     .navbar-toggler img {
