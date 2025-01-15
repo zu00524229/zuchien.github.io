@@ -6,8 +6,22 @@
         box-sizing: border-box;
     } 
 
+    .icon-container i {
+        transition: transform 0.3s ease; /* 添加平滑過渡效果 */
+        cursor: pointer;
+    }
+
+    /* 滑鼠懸停時放大效果 */
+    .icon-container i:hover {
+        transform: scale(1.1); /* 放大 1.2 倍 */
+    }
+
     h2 {
-        margin-bottom:20px;
+        margin-bottom: 20px;
+        font-family: 'Press Start 2P', cursive;  /* 像素遊戲風格的字體 */
+        font-weight: bold;  /* 加粗字體 */
+        font-size: 32px;  /* 調整字體大小以符合像素風格 */
+        color: #f8c006;  /* 設定字體顏色 */
     }
     .navbar-toggler img {
         width: 50px; /* 設定預設的圖片寬度 */
@@ -25,11 +39,11 @@
 
     body {
         padding-top: 50px;  /* 設定為導航欄的高度 */
-        font-family: 'Press Start 2P', monospace;
+        font-family: 'Courier New', Courier, monospace;
         background-color: #222222;
         color: #ffffff;
         overflow-x: hidden;
-        background-image: url('../images/001.png'); /*替換為你的背景圖片路徑*/
+        background-image: url('../images/bg1.png'); /*替換為你的背景圖片路徑*/
         background-size: cover; /* 背景圖像覆蓋整個頁面 */
         background-position: center; /* 背景圖像居中 */
         background-attachment: fixed; /* 背景固定 */
@@ -106,7 +120,6 @@ nav ul li a:hover {
     
 
     .card {
-        height: 250px; /* 設定卡片高度 */
         border-radius: 10px; /* 邊角圓滑 */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 卡片陰影 */
         transition: transform 0.3s, box-shadow 0.3s, filter 0.3s; /* 動畫效果 */
