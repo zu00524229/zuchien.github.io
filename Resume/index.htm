@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的履歷頁面</title>
+    <title>個人履歷</title>
     <!-- 引入 Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -19,40 +19,66 @@
 <body>
     <nav class="navbar navbar-expand-lg"
         style="background-color: #000000; position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
-        <a class="navbar-brand text-white" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        <a class="navbar-brand text-white" href="#">Touch</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <img src="images/menu.png"></span>
+            <img src="images/menu.png" alt="Menu">
         </button>
-        <button id="openFormBtn">留言版</button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto"> <!-- ml-auto 用來將項目靠右 -->
-                <li class="nav-item"><a class="nav-link text-white" href="#contact">
-                        <i class="fa-solid fa-phone"></i></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#about">
-                        <img src="images/aboutMe.png"></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#MySkill">
-                        <img src="images/skill.png"></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#portfolio">
-                        <img src="images/Portfolio.png"></a></a></li>
-
+            <ul class="navbar-nav ms-auto"> <!-- ms-auto 用來將項目靠右 -->
+                <li class="nav-item">
+                    <button id="openFormBtn" class="btn btn-link text-white">
+                        <img src="images/message.png" alt="message"></button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#contact">
+                        Contact Me <i class="fa-solid fa-phone"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <!-- 手機模式顯示文字，桌面模式顯示圖片 -->
+                    <a class="nav-link text-white d-none d-lg-block" href="#about">
+                        <img src="images/aboutMe.png" alt="About Me">
+                    </a>
+                    <a class="nav-link text-white d-block d-lg-none" href="#about">
+                        About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <!-- 手機模式顯示文字，桌面模式顯示圖片 -->
+                    <a class="nav-link text-white d-none d-lg-block" href="#MySkill">
+                        <img src="images/skill.png" alt="My Skills">
+                    </a>
+                    <a class="nav-link text-white d-block d-lg-none" href="#MySkill">
+                        My Skills
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <!-- 手機模式顯示文字，桌面模式顯示圖片 -->
+                    <a class="nav-link text-white d-none d-lg-block" href="#portfolio">
+                        <img src="images/Portfolio.png" alt="Portfolio">
+                    </a>
+                    <a class="nav-link text-white d-block d-lg-none" href="#portfolio">
+                        My Work
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
 
+
     <header class="resume-header" style="padding-top: 100px;">
         <div class="container">
             <div class="row">
-                <div class="card col-md-12 border-warning" style="font-size: 1.2ew;">
-                    <h5 class="card-header">Hello!!</h5>
+                <div class="card col-md-12 border-warning" style="font-size: 1rem; height:300px;">
+                    <h5 class="card-header" style="font-size: 2rem;">Hello!!</h5>
                     <div class="card-body" style="padding-left: 50px; padding-top: 20px; height: auto;">
-                        <h5 class="card-title" style="font-size: 3ew;">I'm Wen Chien.</h5><br>
-                        <p class="card-text" style="font-size: 1.5ew;">　　　　Welcome to my resume. Nice to meet you.
+                        <h5 class="card-title" style="font-size: 1.8rem;">I'm Wen Chien.</h5><br>
+                        <p class="card-text" style="font-size: 1.3rem;">　　　　Welcome to my resume. Nice to meet you.
                         </p>
                         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                     </div>
                 </div>
-
             </div>
         </div>
     </header>
@@ -63,7 +89,7 @@
         <h2 class="text-center">About Me</h2>
         <div class="row justify-content-center">
             <!-- 第一張卡片 -->
-            <div class="card mx-3 col-lg-5 col-md-6 col-sm-12">
+            <div class="card mx-3 col-lg-5 col-md-6 col-sm-6">
                 <div class="card-header">
                     介紹
                 </div>
@@ -72,13 +98,13 @@
                         <i class="fa-solid fa-angle-right"></i>　<span style="font-size: 20px;">陳文謙</span><br>
                         <i class="fa-solid fa-angle-right"></i>　1996/05/07<br>
                         <i class="fa-solid fa-angle-right"></i>　<span style="font-size: 20px;">台中市南區</span><br>
-                        <i class="fa-solid fa-angle-right"></i>　2019<span
-                            style="font-size: 20px;">年肄業於朝陽科技大學工業設計系四年級</span>
+                        <i class="fa-solid fa-angle-right"></i>　<span style="font-size: 20px;">埔里高工機械科、</span><br>
+                        　2019<span style="font-size: 20px;">年肄業於朝陽科技大學工業設計系四年級</span>
                     </p>
                 </div>
             </div>
             <!-- 第二張卡片 -->
-            <div class="card mx-3 col-lg-5 col-md-6 col-sm-12">
+            <div class="card mx-3 col-lg-5 col-md-6 col-sm-6">
                 <div class="card-header">
                     個人經歷
                 </div>
@@ -87,16 +113,25 @@
                         <span style="font-size: 15px">2024/10/28 ~ 2025/01/17</span><br>
                         <span style="font-size: 18px">中彰投職訓局，全端網頁程式設計班學員，製作網頁專案。 (前台商品專區)</span><br>
                         <span style="font-size: 15px">2020/9 ~ 2024/10</span><br>
-                        <span style="font-size: 18px">蝦皮網路賣家，負責包裝出貨、現場銷售等等。</span>
-                        <!-- <footer class="blockquote-footer">
-                            中彰投職訓局，全端網頁程式設計班學員
-                            <cite title="Source Title">製作網頁專案</cite>
-                        </footer> -->
+                        <span style="font-size: 18px">蝦皮網路賣家，負責包裝出貨、現場銷售....等等。</span>
                     </blockquote>
                 </div>
             </div>
+            <!-- 第三張卡片: 個人照片 -->
+            <div class="card mx-3 col-lg-5 col-md-6 col-sm-12" style="height: 600px; margin-top: 50px;">
+                <div class="card-header ">
+                    我的照片
+                </div>
+                <div class="card-body" style="display: flex; justify-content: center; align-items: center;">
+                    <img src="images/勇者.png" alt="陳文謙" class="img-fluid rounded-circle"
+                        style="max-width: 90%; max-height: 90%; height: auto; width: auto;">
+                </div>
+            </div>
+
+
         </div>
     </section>
+
 
 
 
@@ -168,14 +203,11 @@
             <div class="bento-item card-2 border-primary col-lg-6 col-md-6 col-sm-6" style="margin-left: 50px; border: 8px solid #fff;
                 display: flex;align-items: center;  justify-content: left; ">
                 <div class="skills-list">
-                    <i class="fa-brands fa-js"></i> JavaScript <br>
-                    <i class="fa-brands fa-html5"></i> HTML5 <br>
-                    <i class="fa-brands fa-css3-alt"></i> CSS <br>
-                    <i class="fa-brands fa-php"></i> PHP <br>
-                    <i class="fa-brands fa-laravel"></i> Laravel <br>
-                    <i class="fa-solid fa-database"></i> MySQL <br>
-                    <i class="fa-brands fa-unity"></i> Unity<br>
-                    C#
+                    <p><strong>遊戲演示：</strong></p>
+                    <img src="images/Runner.gif" alt="專案動畫"
+                        style="width: 100%; max-width: 350px; border-radius: 8px;"><img src="images/Runner.gif"
+                        alt="專案動畫" style="width: 100%; max-width: 350px; border-radius: 8px;">
+                    <p>這是我開發的遊戲，展示遊玩方式。</p>
                 </div>
             </div>
         </div>
@@ -273,7 +305,7 @@
 
 
     <!-- JavaScript留言表程式-->
-    <script>
+    <!-- <script>
         document.getElementById('myForm').addEventListener('submit', function (e) {
             e.preventDefault();  // 防止表單自動提交
 
@@ -306,14 +338,14 @@
                     alert('提交失敗，請稍後再試。');
                 });
         });
-    </script>
+    </script> -->
 
-    <!-- google聯絡表單 -->
+    <!-- google聯絡表單(已完成) -->
     <script>
         // 設置按鈕點擊事件，開啟 SweetAlert2 彈出視窗顯示 Google 表單
         document.getElementById("openFormBtn").addEventListener("click", function () {
             Swal.fire({
-                title: "請留下您的留言",
+                title: "留下您的留言",
                 html: `
                 <iframe
                     src="https://docs.google.com/forms/d/e/1FAIpQLScyxsSOtDgTPmaQsWfscOwnde8gPbItfqFjPrFIN0caoRVv8w/viewform?usp=sharing"
