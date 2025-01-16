@@ -45,7 +45,7 @@
         background-color: #222222;
         color: #ffffff;
         overflow-x: hidden;
-        background-image: url('../images/bg1.png'); /*替換為你的背景圖片路徑*/
+        background-image: url('../images/bg4.png'); /*替換為你的背景圖片路徑*/
         background-size: cover; /* 背景圖像覆蓋整個頁面 */
         background-position: center; /* 背景圖像居中 */
         background-attachment: fixed; /* 背景固定 */
