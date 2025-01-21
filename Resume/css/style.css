@@ -5,6 +5,12 @@
         padding: 0;
         box-sizing: border-box;
     } 
+    /* Lightbox 內部圖片大小調整 */
+    .card-img-top {
+        width: 300px;  /* 設置為 300px 寬度 */
+        height: auto;  /* 根據寬度自動調整高度 */
+      }
+      
 
     .icon-container i {
         transition: transform 0.3s ease; /* 添加平滑過渡效果 */
