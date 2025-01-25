@@ -6,10 +6,13 @@
         box-sizing: border-box;
     } 
     /* Lightbox 內部圖片大小調整 */
-    .card-img-top {
-        width: 300px;  /* 設置為 300px 寬度 */
-        height: auto;  /* 根據寬度自動調整高度 */
-      }
+
+  /* 中央對齊圖片 */
+  .lightbox .lb-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
       
 
     .icon-container i {

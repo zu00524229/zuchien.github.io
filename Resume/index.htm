@@ -102,7 +102,7 @@
             <div class="card-header">我的照片</div>
             <div class="card-body d-flex justify-content-center align-items-center">
               <img
-                src="images/勇者.png"
+                src="images/me.jpg"
                 alt="陳文謙"
                 class="img-fluid rounded-circle"
                 style="max-width: 90%; max-height: 90%; height: auto; width: auto"
@@ -324,9 +324,9 @@
         <div class="col-md-4">
           <div class="card" style="width: 100%">
             <!-- 點擊圖片顯示影片 -->
-            <a href="images/project3.gif" data-lightbox="video-gallery" data-title="一番賞抽獎網站" style="width: 200px;;">
-                <a href="images/project2.gif" data-lightbox="video-gallery" data-title="一番賞抽獎網站">
-                  <a href="images/project1.gif" data-lightbox="video-gallery" data-title="一番賞抽獎網站" >
+            <a href="images/project3.gif" data-lightbox="portfolio" data-title="一番賞抽獎網站">
+                <a href="images/project2.gif" data-lightbox="portfolio" data-title="一番賞抽獎網站">
+                  <a href="images/project1.gif" data-lightbox="portfolio" data-title="一番賞抽獎網站" >
               <img src="images/01.png" class="card-img-top" alt="一番賞抽獎網站" />
             </a>
             <div class="card-body">
@@ -350,7 +350,7 @@
       document.getElementById("learn2").addEventListener("click", function () {
         Swal.fire({
           title: "第二個遊戲",
-          text: " 使用 Unity 引擎開發的 2D 遊戲，嘗試 playerinput控制系統來控制角色，運用物體生成與碰撞邏輯來做變化，讓遊戲的可玩性更高。較好維護的腳本，未來可以增加更多要素。",
+          text: " 使用 Unity 引擎開發的 2D 遊戲，嘗試 Player input控制系統來控制角色，運用物體生成與碰撞邏輯來做變化，讓遊戲的可玩性更高。較好維護的腳本，未來可以增加更多要素。",
           // icon: "question",
         });
       });
@@ -375,8 +375,8 @@
           </div>
           <!--icon 在右邊 -->
           <div class="col-md-6">
-            <div class="icon-container d-flex justify-content-center">
-              <div class="mx-3 text-center">
+            <div class="d-flex justify-content-center">
+              <div class="icon-container  mx-3 text-center">
                 <i
                   class="fa-brands fa-line"
                   style="font-size: 100px; cursor: pointer"
@@ -384,7 +384,7 @@
                 ></i>
                 <!-- <p class="mt-2">Line</p> -->
               </div>
-              <div class="mx-3 text-center">
+              <div class="icon-container2 mx-3 text-center">
                 <i
                   class="fa-regular fa-envelope"
                   style="font-size: 100px; cursor: pointer"
@@ -406,6 +406,19 @@
             position: "top-end",
             html: `<img src="images/lineQrcode.jpg" alt="QR Code" style="width: 200px; height: 200px;"/>`,
             // html: `<i class="fa-regular fa-thumbs-up" style="font-size: 30px;"></i>`, // 使用 Font Awesome 圖標
+            title: tooltipText,
+            showConfirmButton: false,
+            timer: 3500,
+          });
+        });
+      });
+
+      document.querySelectorAll(".icon-container2 i").forEach((icon) => {
+        icon.addEventListener("click", () => {
+          const tooltipText = icon.getAttribute("data-tooltip");
+          Swal.fire({
+            position: "top-end",
+            html: `<i class="fa-regular fa-thumbs-up" style="font-size: 30px;"></i>`, // 使用 Font Awesome 圖標
             title: tooltipText,
             showConfirmButton: false,
             timer: 3500,
@@ -436,7 +449,7 @@
 
     <footer class="text-center py-3">
       <p>
-        © 2024 All rights reserved. |
+        © 2025 All rights reserved. |
         <a href="#">隱私政策</a>
       </p>
     </footer>
