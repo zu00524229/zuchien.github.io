@@ -36,12 +36,6 @@
         <ul class="navbar-nav ms-auto">
           <!-- ms-auto 用來將項目靠右 -->
             <!-- 手機模式顯示文字，桌面模式顯示圖片 -->
-            <li class="nav-item">
-            <a class="nav-link text-white d-none d-lg-block" href="https://github.com/zu00524229/Portfolio/" target="_blank">
-             <i class="fa-brands fa-github" style="font-size: 30px;"></i>
-            </a>
-            <a class="nav-link text-white d-block d-lg-none" href="https://github.com/zu00524229/Portfolio/" target="_blank">Portfolio</a>
-          </li>
             <a class="nav-link text-white d-none d-lg-block" href="#about">
               <img src="images/aboutMe.png" alt="About Me" />
             </a>
@@ -397,6 +391,14 @@
                 ></i>
                 <!-- <p class="mt-2">Email</p> -->
               </div>
+              <div class="icon-container3 mx-3 text-center">
+                <i
+                  class="fa-brands fa-github"
+                  style="font-size: 100px; cursor: pointer"
+                  data-tooltip="https://github.com/zu00524229/Portfolio/"
+                ></i>
+                <!-- <p class="mt-2">Email</p> -->
+              </div>
             </div>
           </div>
         </div>
@@ -424,6 +426,19 @@
           Swal.fire({
             position: "top-end",
             html: `<i class="fa-regular fa-thumbs-up" style="font-size: 30px;"></i>`, // 使用 Font Awesome 圖標
+            title: tooltipText,
+            showConfirmButton: false,
+            timer: 3500,
+          });
+        });
+      });
+
+      document.querySelectorAll(".icon-container3 i").forEach((icon) => {
+        icon.addEventListener("click", () => {
+          const tooltipText = icon.getAttribute("data-tooltip");
+          Swal.fire({
+            position: "top-end",
+            html: `<i class="fa-brands fa-github" style="font-size: 30px;">`, 
             title: tooltipText,
             showConfirmButton: false,
             timer: 3500,
