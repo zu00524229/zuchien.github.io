@@ -21,6 +21,8 @@
       style="background-color: #000000; position: fixed; top: 0; left: 0; width: 100%; z-index: 1000"
     >
       <a class="navbar-brand text-white" href="#">Touch</a>
+
+      <!-- 漢堡選單按鈕 -->
       <button
         class="navbar-toggler"
         type="button"
@@ -32,42 +34,48 @@
       >
         <img src="images/menu.png" alt="Menu" />
       </button>
+
+      <!-- 導覽連結區塊 -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <!-- ms-auto 用來將項目靠右 -->
-            <!-- 手機模式顯示文字，桌面模式顯示圖片 -->
-           <li class="nav-item">
+          <!-- About -->
+          <li class="nav-item">
             <a class="nav-link text-white d-none d-lg-block" href="#about">
-              <img src="images/aboutMe.png" alt="About Me" />
+              <!-- <img src="images/aboutMe.png" alt="About Me" /> -->
+              <i class="fa-solid fa-user"></i>
             </a>
             <a class="nav-link text-white d-block d-lg-none" href="#about">About</a>
           </li>
+
+          <!-- Skill -->
           <li class="nav-item">
-            <!-- 手機模式顯示文字，桌面模式顯示圖片 -->
             <a class="nav-link text-white d-none d-lg-block" href="#MySkill">
-              <img src="images/skill.png" alt="My Skills" />
+              <!-- <img src="images/skill.png" alt="My Skills" /> -->
+              <i class="fa-solid fa-gamepad"></i>
             </a>
             <a class="nav-link text-white d-block d-lg-none" href="#MySkill">Skill</a>
           </li>
+
+          <!-- Portfolio -->
           <li class="nav-item">
-            <!-- 手機模式顯示文字，桌面模式顯示圖片 -->
             <a class="nav-link text-white d-none d-lg-block" href="#portfolio">
-              <img src="images/Portfolio.png" alt="Portfolio" />
+              <i class="fa-solid fa-briefcase"></i>
             </a>
             <a class="nav-link text-white d-block d-lg-none" href="#portfolio">Work</a>
           </li>
+
+          <!-- Contact -->
           <li class="nav-item">
             <a class="nav-link text-white" href="#contact">
-              Contact Me
-              <i class="fa-solid fa-phone"></i>
+              <i class="fa-solid fa-phone-volume"></i>
             </a>
           </li>
 
+          <!-- 留言板按鈕 -->
           <li class="nav-item">
             <button id="openFormBtn" class="btn btn-link text-white">
-              <img src="images/message.png" alt="message" />
+              <i class="fa-solid fa-comment-dots"></i>
             </button>
-            <!-- 留言板 -->
           </li>
         </ul>
       </div>
@@ -170,104 +178,95 @@
     </section>
 
     <!-- Skill -->
-    <section class="section" id="MySkill" class="container py-5">
-      <h2 class="text-center">核心技能</h2>
+    <section id="MySkill" class="section container py-5">
+      <h2 class="text-center mb-4">核心技能</h2>
       <div class="row">
-        <div class="Rpg col-lg-6 col-md-6 col-sm-6 border-danger">
-          <!-- 第一個技能卡片 -->
-          <table style="width: 90%; border-collapse: collapse">
+        <!-- 技能條清單 -->
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <table style="width: 100%; border-collapse: collapse">
             <tr>
-              <td style="padding-right: 10px; width: 30px">
+              <td colspan="3" style="font-size: 1.2rem; padding: 10px 0">穩定升級中....</td>
+            </tr>
+            <!-- 每一行技能 -->
+            <tr>
+              <td style="width: 40px; text-align: center">
                 <i class="fa-brands fa-html5" style="font-size: 30px"></i>
               </td>
-              <td style="padding-left: 5px; text-align: left; font-size: 1.5rem">HTML5</td>
+              <td style="font-size: 1.2rem">HTML5</td>
               <td style="width: 100%">
-                <progress value="70" max="100" class="pixel-progress"></progress>
+                <progress value="70" max="100" class="pixel-progress w-100"></progress>
               </td>
             </tr>
             <tr>
-              <td style="padding-right: 10px; width: 30px">
+              <td style="text-align: center">
                 <i class="fa-brands fa-css3-alt" style="font-size: 30px"></i>
               </td>
-              <td style="padding-left: 5px; text-align: left; font-size: 1.5rem">CSS</td>
-              <td style="width: 100%">
-                <progress value="70" max="100" class="pixel-progress"></progress>
+              <td style="font-size: 1.2rem">CSS</td>
+              <td>
+                <progress value="40" max="100" class="pixel-progress w-100"></progress>
               </td>
             </tr>
             <tr>
-              <td style="padding-right: 10px; width: 30px">
-                <i class="fa-solid fa-c" style="font-size: 30px;"></i></i>
+              <td style="text-align: center"><i class="fa-brands fa-js" style="font-size: 30px"></i></td>
+              <td style="font-size: 1.2rem">JavaScript</td>
+              <td><progress value="15" max="100" class="pixel-progress w-100"></progress></td>
+            </tr>
+            <tr>
+              <td style="text-align: center"><i class="fa-brands fa-python" style="font-size: 30px"></i></td>
+              <td style="font-size: 1.2rem">Python</td>
+              <td><progress value="60" max="100" class="pixel-progress w-100"></progress></td>
+            </tr>
+            <tr>
+              <td style="text-align: center">
+                <i class="fa-solid fa-gamepad" style="font-size: 30px"></i>
               </td>
-              <td style="padding-left: 5px; text-align: left; font-size: 1.5rem">C#</td>
-              <td style="width: 100%">
-                <progress value="60" max="100" class="pixel-progress"></progress>
+              <td style="font-size: 1.2rem">pygame</td>
+              <td>
+                <progress value="50" max="100" class="pixel-progress w-100"></progress>
               </td>
             </tr>
             <tr>
-              <td style="padding-right: 10px; width: 30px">
-                <i class="fa-brands fa-php" style="font-size: 30px"></i>
-              </td>
-              <td style="padding-left: 5px; text-align: left; font-size: 1.5rem">PHP</td>
-              <td style="width: 100%">
-                <progress value="50" max="100" class="pixel-progress"></progress>
-              </td>
+              <td style="text-align: center"><i class="fa-brands fa-php" style="font-size: 30px"></i></td>
+              <td style="font-size: 1.2rem">PHP</td>
+              <td><progress value="55" max="100" class="pixel-progress w-100"></progress></td>
             </tr>
             <tr>
-              <td style="padding-right: 10px; width: 30px">
-                <i class="fa-brands fa-laravel" style="font-size: 30px"></i>
-              </td>
-              <td style="padding-left: 5px; text-align: left; font-size: 1.5rem">Laravel</td>
-              <td style="width: 100%">
-                <progress value="10" max="100" class="pixel-progress"></progress>
-              </td>
+              <td style="text-align: center"><i class="fa-brands fa-laravel" style="font-size: 30px"></i></td>
+              <td style="font-size: 1.2rem">Laravel</td>
+              <td><progress value="65" max="100" class="pixel-progress w-100"></progress></td>
             </tr>
             <tr>
-              <td style="padding-right: 10px; width: 30px">
-                <i class="fa-brands fa-unity" style="font-size: 30px"></i>
-              </td>
-              <td style="padding-left: 5px; text-align: left; font-size: 1.5rem">Unity2D</td>
-              <td style="width: 100%">
-                <progress value="50" max="100" class="pixel-progress"></progress>
-              </td>
+              <td style="text-align: center"><i class="fa-brands fa-unity" style="font-size: 30px"></i></td>
+              <td style="font-size: 1.2rem">Unity2D</td>
+              <td><progress value="40" max="100" class="pixel-progress w-100"></progress></td>
             </tr>
             <tr>
-              <td style="padding-right: 20px; width: 30px">
-                <i class="fa-brands fa-bootstrap" style="font-size: 30px"></i>
-              </td>
-              <td style="padding-left: 5px; text-align: left; font-size: 1.5rem">Bootstrap</td>
-              <td style="width: 100%">
-                <progress value="50" max="100" class="pixel-progress"></progress>
-              </td>
+              <td style="text-align: center"><i class="fa-brands fa-bootstrap" style="font-size: 30px"></i></td>
+              <td style="font-size: 1.2rem">Bootstrap</td>
+              <td><progress value="50" max="100" class="pixel-progress w-100"></progress></td>
             </tr>
           </table>
-          <!-- <i class="fa-brands fa-html5"></i>HTML5　　<i class="fa-brands fa-css3-alt"></i> CSS<br>                    
-                        <i class="fa-brands fa-js"></i>JavaScript　　<i class="fa-brands fa-php"></i>PHP<br>                
-                        <i class="fa-brands fa-laravel"></i>Laravel　　<i class="fa-brands fa-unity"></i>Unity<br>                   
-                        C# -->
         </div>
-        <!-- 第二個技能卡片 -->
-        <div
-          class="bento-item card-2 border-primary col-lg-6 col-md-6 col-sm-6"
-          style="margin-left: 50px; border: 8px solid #fff; display: flex; align-items: center; justify-content: left"
-        >
-          <div class="skills-list">
+
+        <!-- 遊戲演示 -->
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div class="card p-3 shadow-sm border-primary">
             <p><strong>遊戲演示：</strong></p>
-            <img src="images/gm1.gif" alt="專案動畫" style="width: 100%; max-width: 350px; border-radius: 8px" />
-            <img src="images/Runner.gif" alt="專案動畫" style="width: 100%; max-width: 350px; border-radius: 8px" />
-            <p>這是我開發的遊戲，展示遊玩畫面。</p>
+            <img src="images/ninja.gif" alt="專案動畫" class="img-fluid rounded mb-2" style="max-width: 350px" />
+            <img src="images/Runner.gif" alt="專案動畫" class="img-fluid rounded" style="max-width: 350px" />
+            <img src="images/doom2D.gif" alt="專案動畫" class="img-fluid rounded" style="max-width: 350px" />
           </div>
         </div>
       </div>
 
-      <!-- 第三個技能卡片 -->
-      <div
-        class="bento-item card-3 border-success col-lg-12 col-md-12 col-sm-12"
-        style="height: 230px; border: 5px solid #ffffff; margin: 5px"
-      >
+      <!-- 動態文字展示（typed.js） -->
+      <div class="card mt-3 border-success p-3" style="height: 230px">
         <div id="typed7"></div>
       </div>
-      <div style="text-align: center; margin-top: 5px">
-        <img src="images/ground.png" alt="Ground" style="max-width: 350px; height: auto" />
+
+      <!-- 底部圖片裝飾 -->
+      <div class="text-center mt-3">
+        <img src="images/ground.png" alt="Ground" class="img-fluid" style="max-width: 350px" />
       </div>
     </section>
 
@@ -275,7 +274,7 @@
       // 第三個卡片的動畫
       var typed7 = new Typed("#typed7", {
         strings: [
-          "三個月有限的時間裡,同時學習了各項程式語言,擁有製作專案的經驗,包含了資料庫建立,與後台的連結、前台。能夠短時間學習一項技能,並且不怕困難的突破障礙,解決問題的能力,其中C#、Unity自學,同時對遊戲製作與程式碼保有熱情。未來會持續積極進修相關技術!",
+          "持續學習各類程式語言與開發技術，目前已實作多個 Laravel 專案，涵蓋資料庫設計、後台管理系統、以及前台介面的整合，逐步累積完整的全端開發經驗。除了網頁開發，我也積極自學 C#、Unity 及 Pygame，開始嘗試開發遊戲，從邏輯設計、角色行為控制到畫面呈現，都一點一滴自己動手完成。這些實作不僅提升了我的程式能力，也讓我對「如何把想法變成可玩的東西」這件事更有感覺與熱情。",
         ],
         typeSpeed: 100, // 打字速度
         backSpeed: 40, // 回退速度
@@ -287,46 +286,52 @@
 
     <!-- 作品集 -->
     <section id="portfolio" class="container py-5">
-      <h2 class="container mt-5 text-end">經驗亮點</h2>
-      <div class="row">
-        <!-- 第一個卡片 -->
-        <div class="col-md-4">
-          <div class="card" style="width: 100%">
-            <img src="images/gm1.gif" class="card-img-top" alt="第一個遊戲" />
+      <h2 class="text-end mb-4">經驗亮點</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <!-- 卡片元件 -->
+        <div class="col">
+          <div class="card portfolio-card h-100">
+            <img src="images/ninja.gif" class="card-img-top" alt="NinjaGame" />
             <div class="card-body">
-              <h5 class="card-title">無限輪迴</h5>
-              <!-- <p class="card-text">
-                自學 Unity 1 個月後，嘗試做出的第一個作品，用了簡單的 Rigidbody
-                物理碰撞與角色控制邏輯腳本， 階梯生成邏輯，UI
-                介面、重製遊戲功能。
-              </p> -->
+              <h5 class="card-title">NinjaGame</h5>
+              <a class="btn btn-warning" id="learn4">內容</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card portfolio-card h-100">
+            <img src="images/gm1.gif" class="card-img-top" alt="火鍋下樓梯" />
+            <div class="card-body">
+              <h5 class="card-title">火鍋下樓梯</h5>
               <a class="btn btn-warning" id="learn1">內容</a>
             </div>
           </div>
         </div>
-        <!-- 第二個卡片 -->
-        <div class="col-md-4">
-          <div class="card" style="width: 100%">
-            <img src="images/Runner.gif" class="card-img-top" alt="第二個遊戲" />
+
+        <div class="col">
+          <div class="card portfolio-card h-100">
+            <img src="images/Runner.gif" class="card-img-top" alt="勇者無懼" />
             <div class="card-body">
               <h5 class="card-title">勇者無懼</h5>
-              <!-- <p class="card-text">
-                使用 Unity 引擎開發的 2D 遊戲，嘗試 playerinput
-                控制系統來控制角色，
-                運用物體生成與碰撞邏輯來做變化，讓遊戲的可玩性更高。
-                較好維護的腳本，未來可以增加更多要素。
-              </p> -->
               <a class="btn btn-warning" id="learn2">內容</a>
             </div>
           </div>
         </div>
-        <!-- 第三個卡片 -->
-        <div class="col-md-4">
-          <div class="card" style="width: 100%">
-            <!-- 點擊圖片顯示影片 -->
-            <a href="images/project3.gif" data-lightbox="portfolio" data-title="一番賞抽獎網站">
-                <a href="images/project2.gif" data-lightbox="portfolio" data-title="一番賞抽獎網站">
-                  <a href="images/project1.gif" data-lightbox="portfolio" data-title="一番賞抽獎網站" >
+
+        <div class="col">
+          <div class="card portfolio-card h-100">
+            <img src="images/doom2D.gif" class="card-img-top" alt="勇者無懼" />
+            <div class="card-body">
+              <h5 class="card-title">Doom仿3D</h5>
+              <a class="btn btn-warning" id="learn5">內容</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card portfolio-card h-100">
+            <a href="images/project1.gif" data-lightbox="portfolio" data-title="一番賞抽獎網站">
               <img src="images/01.png" class="card-img-top" alt="一番賞抽獎網站" />
             </a>
             <div class="card-body">
@@ -335,34 +340,10 @@
             </div>
           </div>
         </div>
+
+        <!-- 你可以繼續增加更多 col 放作品，會自動排版 -->
       </div>
     </section>
-
-    <script>
-      document.getElementById("learn1").addEventListener("click", function () {
-        Swal.fire({
-          title: "第一個遊戲",
-          text: " 自學 Unity 1 個月後，嘗試做出的第一個作品，用了簡單的 Rigidbody物理碰撞與角色控制邏輯腳本， 階梯生成邏輯，UI介面、重製遊戲功能。",
-          // icon: "question",
-        });
-      });
-
-      document.getElementById("learn2").addEventListener("click", function () {
-        Swal.fire({
-          title: "第二個遊戲",
-          text: " 使用 Unity 引擎開發的 2D 遊戲，嘗試 Player input控制系統來控制角色，運用物體生成與碰撞邏輯來做變化，讓遊戲的可玩性更高。較好維護的腳本，未來可以增加更多要素。",
-          // icon: "question",
-        });
-      });
-
-      document.getElementById("learn3").addEventListener("click", function () {
-        Swal.fire({
-          title: "一番賞抽獎網站",
-          text: "與夥伴，使用了 Laravel、HTML、Bootstrap、JS、CSS、PHP等技術，前台顯示由後台控制，並支援資料庫的新增、刪除、修改功能。增加抽獎功能，抽到的獎項資料存入資料庫，由後台顯示並同步前台資料。",
-          // icon: "question",
-        });
-      });
-    </script>
 
     <!-- 聯絡我 -->
     <section class="section" id="contact" class="container py-5">
@@ -376,7 +357,7 @@
           <!--icon 在右邊 -->
           <div class="col-md-6">
             <div class="d-flex justify-content-center">
-              <div class="icon-container  mx-3 text-center">
+              <div class="icon-container mx-3 text-center">
                 <i
                   class="fa-brands fa-line"
                   style="font-size: 100px; cursor: pointer"
@@ -392,78 +373,12 @@
                 ></i>
                 <!-- <p class="mt-2">Email</p> -->
               </div>
-              <div class="icon-container3 mx-3 text-center">
-                <i
-                  class="fa-brands fa-github"
-                  style="font-size: 100px; cursor: pointer"
-                  data-tooltip="https://github.com/zu00524229/Portfolio/"
-                ></i>
-                <!-- <p class="mt-2">Email</p> -->
-              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <script>
-      document.querySelectorAll(".icon-container i").forEach((icon) => {
-        icon.addEventListener("click", () => {
-          const tooltipText = icon.getAttribute("data-tooltip");
-          Swal.fire({
-            position: "top-end",
-            html: `<img src="images/lineQrcode.jpg" alt="QR Code" style="width: 200px; height: 200px;"/>`,
-            // html: `<i class="fa-regular fa-thumbs-up" style="font-size: 30px;"></i>`, // 使用 Font Awesome 圖標
-            title: tooltipText,
-            showConfirmButton: false,
-            timer: 3500,
-          });
-        });
-      });
-
-      document.querySelectorAll(".icon-container2 i").forEach((icon) => {
-        icon.addEventListener("click", () => {
-          const tooltipText = icon.getAttribute("data-tooltip");
-          Swal.fire({
-            position: "top-end",
-            html: `<i class="fa-regular fa-thumbs-up" style="font-size: 30px;"></i>`, // 使用 Font Awesome 圖標
-            title: tooltipText,
-            showConfirmButton: false,
-            timer: 3500,
-          });
-        });
-      });
-
-      document.querySelectorAll(".icon-container3 i").forEach((icon) => {
-        icon.addEventListener("click", () => {
-          const tooltipText = icon.getAttribute("data-tooltip");
-          Swal.fire({
-            position: "top-end",
-            html: `<i class="fa-brands fa-github" style="font-size: 30px;">`, 
-            title: tooltipText,
-            showConfirmButton: false,
-            timer: 3500,
-          });
-        });
-      });
-    </script>
-
-    <!-- google聯絡表單(已完成) -->
-    <script>
-      // 設置按鈕點擊事件，開啟 SweetAlert2 彈出視窗顯示 Google 表單
-      document.getElementById("openFormBtn").addEventListener("click", function () {
-        Swal.fire({
-          title: "留下您的留言",
-          html: `
-                <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLScyxsSOtDgTPmaQsWfscOwnde8gPbItfqFjPrFIN0caoRVv8w/viewform?usp=sharing"
-                    width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
-            `,
-          showCloseButton: true, // 顯示關閉按鈕
-          showConfirmButton: false, // 隱藏確認按鈕
-        });
-      });
-    </script>
     <a href="#" class="back-to-top">
       <img src="images/Up.png" class="img-fluid" alt="Back to top" />
     </a>
@@ -475,6 +390,7 @@
       </p>
     </footer>
 
+    <script src="js\sweetalert.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
